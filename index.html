@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+
+  <meta charset="UTF-8">
+  
+<link rel="apple-touch-icon" type="image/png" href="https://static.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png" />
+<meta name="apple-mobile-web-app-title" content="CodePen">
+
+<link rel="shortcut icon" type="image/x-icon" href="https://static.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico" />
+
+<link rel="mask-icon" type="" href="https://static.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111" />
+
+
+  <title>CodePen - 2051-3</title>
+  
+  
+  
+  
+<style>
+body{
+  background-color: lightgrey;
+}
+
+.correct{
+  background:green;
+}
+
+.incorrect{
+  background: red;
+}
+</style>
+
+  
+  
+  
+  
+
+</head>
+
+<body translate="no" >
+  <h1>geography quiz</h1>
+<ol>
+  <li>countrie to the north of seattle = <input data-correct="canada" /></li>
+  <li>biggest countrie in the world = <input data-correct="russia" /></li>
+  <li>how many continets are in the world = <input data-correct="7"/></li>
+  
+<li>whats the largest river in the world = <input data-correct="amazon river"/></li>
+</ol>
+<li>whats the capital of brazil = <input data-correct="brazila" /></li>
+  <li>what body of water is colifornias coast on = <input data-correct="pacific" /></li>
+  <li>whats the largest city in hawaii = <input data-correct="honolulu"/></li>
+  <li>whats the largest river in the US = <input data-correct="mississippi "/></li>
+</ol>
+<li>whats the largest rainforest in the world = <input data-correct="amazon" /></li></ </ol>
+<li>what continent is indonesia in = <input data- correct="asia" /></li></ </ol>
+  
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+  
+      <script id="rendered-js" >
+console.clear();
+
+$("input").change(onChange);
+
+function onChange(evt) {
+  let correct = $(this).data("correct");
+  let response = $(this).val();
+  if (correct == response) {
+    $(this).removeClass("incorrect").addClass("correct");
+  } else {
+    $(this).removeClass("correct").addClass("incorrect");
+  }
+}
+    </script>
+
+  
+
+</body>
+
+</html>
+ 
